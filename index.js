@@ -41,7 +41,7 @@ module.exports = function (opts) {
 
     var templateFunc = handlebars.compile(templateString);
 
-    file.contents = new Buffer(template(data));
+    file.contents = new Buffer(templateFunc(data));
     this.push(file);
     callback();
   });
