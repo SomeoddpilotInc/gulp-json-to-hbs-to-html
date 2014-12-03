@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "repository": "https://github.com/alexsomeoddpilot/gulp-json-to-hbs-to-html",
   "scripts": {
     "test": "mocha"
   },
@@ -34,7 +35,6 @@
   },
   "devDependencies": {
     "blanket": "^1.1.6",
-    "handlebars": "^2.0.0",
     "mocha": "*"
   },
   "config": {
