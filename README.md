@@ -6,3 +6,15 @@ gulp-json-to-hbs-to-html
 [![devDependency Status](https://david-dm.org/alexsomeoddpilot/gulp-json-to-hbs-to-html/dev-status.svg)](https://david-dm.org/alexsomeoddpilot/gulp-json-to-hbs-to-html#info=devDependencies)
 
 A Gulp library to compile HTML from JSON and Handlebars templates
+
+```
+var gulp = require("gulp");
+var jsonHbsHtml = require("gulp-json-to-hbs-to-html");
+
+gulp.src("./data/**/*.json")
+  .pipe(jsonHbsHtml({
+    prefix: "templates/",
+    suffix: "./handlebars"
+  }))
+  .pipe(gulp.dest("./public"));
+```
