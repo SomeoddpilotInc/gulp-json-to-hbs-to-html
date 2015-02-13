@@ -2,6 +2,7 @@ var gutil = require('gulp-util');
 var through = require('through2');
 var handlebars = require('handlebars');
 var fs = require('fs');
+var yaml = require('js-yaml');
 
 module.exports = function (opts) {
 
@@ -17,7 +18,7 @@ module.exports = function (opts) {
   }
 
   return through.obj(function (file, enc, callback) {
-    var data = JSON.parse(file.contents.toString());
+    var data = yaml.safeLoad(file.contents.toString());
 
     if (!data.template) {
       this.emit(
