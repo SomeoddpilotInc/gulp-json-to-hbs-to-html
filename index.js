@@ -33,7 +33,7 @@ module.exports = function (opts) {
     if (!fs.existsSync(templatePath)) {
       this.emit(
         'error',
-        new gutil.PluginError('gulp-json-to-hbs-to-html', 'Template does not exist')
+        new gutil.PluginError('gulp-json-to-hbs-to-html', 'Template "' + templatePath + '" does not exist')
       );
       return callback();
     }
