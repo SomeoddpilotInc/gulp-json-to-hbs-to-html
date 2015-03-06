@@ -36,7 +36,7 @@ it('should throw errors if incorrect template', function (cb) {
       }))
     }));
   } catch (error) {
-    assert.equal(error.message, "Template does not exist");
+    assert.equal(error.message, 'Template "notreal.handlebars" does not exist');
     cb();
   }
 
