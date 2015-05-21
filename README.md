@@ -7,6 +7,8 @@ gulp-json-to-hbs-to-html
 
 A Gulp library to compile HTML from JSON and Handlebars templates
 
+DEPRECATED: [gulp-consolidate-render](https://github.com/SomeoddpilotInc/gulp-consolidate-render) provides more flexible template rendering in combination with YAML frontmatter.
+
 ```
 var gulp = require("gulp");
 var jsonHbsHtml = require("gulp-json-to-hbs-to-html");
